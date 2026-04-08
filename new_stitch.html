@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#060e20",
+                        "on-secondary-container": "#c5d1e8",
+                        "on-tertiary-fixed": "#270048",
+                        "secondary-fixed-dim": "#cad5ed",
+                        "on-secondary-fixed": "#354053",
+                        "error-container": "#9f0519",
+                        "on-secondary": "#475266",
+                        "on-tertiary-fixed-variant": "#560094",
+                        "on-secondary-fixed-variant": "#515c70",
+                        "on-primary-container": "#002639",
+                        "surface-container": "#0f1930",
+                        "inverse-on-surface": "#4d556b",
+                        "on-error-container": "#ffa8a3",
+                        "on-tertiary": "#33005b",
+                        "surface": "#060e20",
+                        "on-surface": "#dee5ff",
+                        "tertiary-dim": "#9c48ea",
+                        "surface-tint": "#39b8fd",
+                        "primary": "#39b8fd",
+                        "tertiary-fixed": "#ce9bff",
+                        "on-primary-fixed-variant": "#003954",
+                        "on-tertiary-container": "#000000",
+                        "on-primary": "#00324a",
+                        "surface-variant": "#192540",
+                        "surface-bright": "#1f2b49",
+                        "secondary-fixed": "#d8e3fb",
+                        "surface-container-high": "#141f38",
+                        "primary-dim": "#17a8ec",
+                        "on-surface-variant": "#a3aac4",
+                        "outline-variant": "#40485d",
+                        "primary-fixed-dim": "#17a8ec",
+                        "error": "#ff716c",
+                        "on-primary-fixed": "#00121e",
+                        "tertiary-container": "#af5cfe",
+                        "background": "#060e20",
+                        "primary-fixed": "#34b5fa",
+                        "error-dim": "#d7383b",
+                        "surface-container-highest": "#192540",
+                        "tertiary": "#c180ff",
+                        "on-background": "#dee5ff",
+                        "outline": "#6d758c",
+                        "secondary-dim": "#cad5ed",
+                        "on-error": "#490006",
+                        "tertiary-fixed-dim": "#c488ff",
+                        "surface-container-low": "#091328",
+                        "inverse-primary": "#006591",
+                        "secondary": "#d8e3fb",
+                        "secondary-container": "#3c475a",
+                        "inverse-surface": "#faf8ff",
+                        "surface-container-lowest": "#000000",
+                        "primary-container": "#1faaef"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#060e20]/60 backdrop-blur-xl shadow-2xl shadow-slate-950/20">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-100 font-headline">
+                Midnight Architect
+            </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-sky-400 border-b-2 border-sky-400 pb-1 font-headline font-bold text-sm tracking-tight" href="#">Solutions</a>
+<a class="text-slate-400 font-medium font-headline font-bold text-sm tracking-tight hover:text-sky-300 transition-colors duration-300" href="#">About Us</a>
+<a class="text-slate-400 font-medium font-headline font-bold text-sm tracking-tight hover:text-sky-300 transition-colors duration-300" href="#">Contact</a>
+<a class="text-slate-400 font-medium font-headline font-bold text-sm tracking-tight hover:text-sky-300 transition-colors duration-300" href="#">Careers</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold text-sm px-8 py-3 rounded-full scale-95 active:duration-75 transition-transform">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative px-12 max-w-screen-2xl mx-auto mb-32 overflow-hidden">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-surface-variant text-tertiary text-xs font-bold uppercase tracking-widest mb-6 font-label">
+                        Intelligent Infrastructure
+                    </span>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-on-surface font-headline leading-[0.95] mb-8">
+                        Precision <br/><span class="text-primary">Engineering</span> for the Future.
+                    </h1>
+<p class="text-xl text-on-surface-variant font-body max-w-xl leading-relaxed mb-10">
+                        Midnight Architect builds resilient, high-performance digital ecosystems that empower global enterprises to scale with atmospheric precision and uncompromising security.
+                    </p>
+<div class="flex space-x-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold px-10 py-4 rounded-full text-lg shadow-xl shadow-primary/20">
+                            Launch Project
+                        </button>
+<button class="bg-surface-container-high text-on-surface font-headline font-bold px-10 py-4 rounded-full text-lg hover:bg-surface-variant transition-colors">
+                            View Ecosystem
+                        </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="relative w-full aspect-square rounded-[3rem] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Futuristic architectural render of a glass data center at night with glowing blue internal circuits and atmospheric mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ-zpfBQjXCpITymQOowrvz6M7mPbltrQRdxwjmUXiMHEhhWm53HorjJ4MhRXkGrG8wRfs8wKHGrzMhFQleDpuRCKPc3H6rpov-mzlaZKn7ueVAKcX7N2btLlZusgLk6g69kM0MV7evXkYQeIx8OcW1AzvdNXLU16bF5ClGQ6W2Mx3tQS5ZLcbwTOIR6IBevfjlnZ-8gl4o6bcDDkLPkTp8jk5s66xwhffpnjsOUUcqzwfFvxnkdCyHo_XnhT7YfS4FlJKNn2V9m0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Accent Glass Card -->
+<div class="absolute -bottom-10 -left-10 bg-surface-variant/60 backdrop-blur-2xl p-8 rounded-xl border border-outline-variant/15 max-w-xs shadow-2xl">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="speed">speed</span>
+<div class="h-1 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-4/5 h-full bg-primary"></div>
+</div>
+</div>
+<p class="text-on-surface font-headline font-extrabold text-2xl tracking-tighter">99.9% Latency Optimization</p>
+<p class="text-on-surface-variant text-sm mt-1">Global average across all deployments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services - Bento Grid -->
+<section class="bg-surface-container-low py-32 rounded-t-[4rem]">
+<div class="px-12 max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="text-4xl font-black font-headline tracking-tighter text-on-surface mb-4">Our Core Solutions</h2>
+<p class="text-on-surface-variant max-w-md">Precision-tuned modules designed to integrate seamlessly into your existing tech stack.</p>
+</div>
+<button class="text-tertiary font-headline font-bold uppercase tracking-widest text-xs flex items-center gap-2">
+                        View Full Catalog <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="md:col-span-2 bg-surface-container-high p-12 rounded-xl flex flex-col justify-between min-h-[400px] relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-5xl mb-8" data-icon="cloud_done">cloud_done</span>
+<h3 class="text-3xl font-black font-headline tracking-tight mb-4">Cloud Infrastructure</h3>
+<p class="text-on-surface-variant text-lg max-w-md">Scalable, serverless architectures that breathe with your traffic, ensuring zero downtime and peak performance.</p>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 group-hover:opacity-40 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Abstract network topology visualization with glowing nodes and cyan connection lines on a dark void background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgswfoXKNzDxGRik5hqcr5DfR62SFdz69tDX4o00owF73PZqDCzE-jJ4qIAPfOMkQRV1n5QJjHLz7UeDdjr3KXw3TDJhG7ApxPF7saUbioOdpO8G-zO9cdlhnnSdWzWzJqY3oM-WoeNPloz6CD-wx4vXOscyqdFO0DEg5qwS9o6Pj8PsdHKCecVI216cxVZc0zN1fSAYxLowLhC4RyUmSDJ-oYwePvAQWqK9LBcm4yVEj37s4MaPDpxjPLbkVvBy6uFl4qfEFdYvs"/>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-highest p-12 rounded-xl flex flex-col justify-end min-h-[400px]">
+<span class="material-symbols-outlined text-tertiary text-5xl mb-8" data-icon="security">security</span>
+<h3 class="text-3xl font-black font-headline tracking-tight mb-4">Neural Security</h3>
+<p class="text-on-surface-variant">AI-driven threat detection that evolves in real-time to protect your most sensitive data assets.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container p-12 rounded-xl flex flex-col justify-end min-h-[400px]">
+<span class="material-symbols-outlined text-primary text-5xl mb-8" data-icon="analytics">analytics</span>
+<h3 class="text-3xl font-black font-headline tracking-tight mb-4">Precision Analytics</h3>
+<p class="text-on-surface-variant">Deep-dive insights with custom visual telemetry designed for executive decision-making.</p>
+</div>
+<!-- Card 4 -->
+<div class="md:col-span-2 bg-surface-container-high p-12 rounded-xl flex flex-col md:flex-row items-center gap-12 min-h-[400px]">
+<div class="flex-1">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-8" data-icon="architecture">architecture</span>
+<h3 class="text-3xl font-black font-headline tracking-tight mb-4">Systems Integration</h3>
+<p class="text-on-surface-variant text-lg">Harmonizing disparate legacy systems into a unified, modern API-driven ecosystem.</p>
+</div>
+<div class="flex-1 w-full h-full rounded-xl overflow-hidden grayscale contrast-125">
+<img class="w-full h-full object-cover" data-alt="Detailed close-up of high-tech circuit board with blue light reflecting off polished metallic components" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Rd4-jeDoESJlQrKBloRVj_K5-vHlrl44S7oqvTmzuz_lM_HX3ItYf_ITp5inPCvzT6QwjGiFgrig8av8j0UzQka8oN0Xjm_WdepWRtRKKk8Sqnn26biuRZoxMy3aFIfOmhUTuIQ4tYcj9YBsW7b90v8lO09bcnTTR6599LAF5PZCNvZFYdLSyOwdB_KmWjiz1CmN0ClVCMEPnNM6lmHEJg7qr6fFu4d0zFs4vYCxkXUotLN2lNPSo0ByDhjO2zccV61rOPuZ4Hs"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row gap-20 items-start">
+<div class="flex-1 sticky top-32">
+<h2 class="text-5xl font-black font-headline tracking-tighter text-on-surface leading-tight mb-8">Why the Industry <br/>Trusts the <span class="text-tertiary">Architect.</span></h2>
+<p class="text-on-surface-variant text-xl leading-relaxed mb-12">
+                        We don't just build software; we engineer environments where innovation can thrive without friction.
+                    </p>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-headline text-on-surface mb-2">Automated Resilience</h4>
+<p class="text-on-surface-variant">Self-healing systems that identify and resolve bottlenecks before they impact your end users.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="psychology">psychology</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-headline text-on-surface mb-2">Strategic Consulting</h4>
+<p class="text-on-surface-variant">Our architects work alongside your team to define long-term roadmaps, not just short-term fixes.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-fixed-dim/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed-dim" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="text-xl font-bold font-headline text-on-surface mb-2">Sovereign Data</h4>
+<p class="text-on-surface-variant">Unrivaled compliance standards ensuring your data remains yours, localized and encrypted.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full grid grid-cols-2 gap-4">
+<div class="mt-20">
+<img class="w-full rounded-xl mb-4" data-alt="Professional engineer in a dark tech environment observing holographic data displays with soft blue ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxJ9XLyKqbhBO5-cFbaN0l0E1N1vM_G5Zl3ipiWid-bOxdA1nSRLtegWVRZAJ_8rOCKOZ8tSuoDtz-bVsuOBIX-QF8tg0YLzJuLpRqP3drIQqGIa36zhMh6fkM0827i_OoIhvsGwVMV50j2RgJ9auziCvNbIVxPVb-m8AXVGWl49yW1NAHNhI8OOfZH5cCTxc4pcTZ0Ci3lzkloUEE2tn_N5UV9G82hpCLeVr7CaaoLukfo6xnpoFQZcZ0aLP-Q6JDiJdHZx_VKHM"/>
+<div class="bg-surface-container p-6 rounded-xl">
+<p class="text-3xl font-black font-headline text-primary mb-1">250+</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-label">Enterprise Deploys</p>
+</div>
+</div>
+<div>
+<div class="bg-surface-container-high p-6 rounded-xl mb-4">
+<p class="text-3xl font-black font-headline text-tertiary mb-1">15ms</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-label">Edge Response</p>
+</div>
+<img class="w-full rounded-xl" data-alt="Overhead view of a minimalist modern command center with sleek black desks and ultra-wide monitor arrays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_3WO0c0LR9ZdF6lZme_GZBaXClx2IyVbCywkgWnx2aiOOY7Y6StpVTSw5rY-9FFzPoSh8RolI10s39z5GkN-4zZC4AOR3i6nrrDaRTg6ldWYQjEavPEtSOoxMuE1jjxiZxCAiTqyHYGFrodZRoegsiMdyOq27ohqSFe30lRqTSZ-SF3r8FN8uHq5TvmZ-9KRTLKczHE9cjtDz8rBP7O3AnPfB-XfRMIzd42PEYSolg_-le9qeyw31XcssPwWHP6KUYslYIDJfcZ0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-12 max-w-screen-2xl mx-auto my-32">
+<div class="bg-gradient-to-br from-surface-variant to-surface-container-low rounded-[3rem] p-20 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-5xl md:text-7xl font-black font-headline tracking-tighter text-on-surface mb-8">Ready to Build Your <br/><span class="text-primary">Masterpiece?</span></h2>
+<p class="text-on-surface-variant text-xl max-w-2xl mx-auto mb-12">
+                        Join the next generation of industry leaders leveraging Midnight Architect to define their digital future.
+                    </p>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold px-12 py-5 rounded-full text-xl shadow-2xl shadow-primary/30">
+                        Start Your Consultation
+                    </button>
+</div>
+<!-- Abstract decorative element -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#091328] w-full rounded-t-[2rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-black text-slate-200 font-headline mb-6">Midnight Architect</div>
+<p class="text-slate-500 text-sm leading-relaxed">Atmospheric Precision in every line of code. Designing the invisible infrastructure that powers the visible world.</p>
+</div>
+<div>
+<h4 class="font-headline text-on-surface font-bold text-sm mb-6 uppercase tracking-widest">Solutions</h4>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">Infrastructure</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">Security</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">Analytics</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-on-surface font-bold text-sm mb-6 uppercase tracking-widest">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">About Us</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">Careers</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">Press</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-on-surface font-bold text-sm mb-6 uppercase tracking-widest">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">Twitter</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">LinkedIn</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100" href="#">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-10 border-t border-outline-variant/10 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">
+                © 2024 Midnight Architect. Atmospheric Precision.
+            </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all" href="#">Security</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 hover:text-slate-100 transition-all" href="#">Status</a>
+</div>
+</div>
+</footer>
+</body></html>

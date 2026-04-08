@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#060e20",
+                    "on-secondary-container": "#c5d1e8",
+                    "on-tertiary-fixed": "#270048",
+                    "secondary-fixed-dim": "#cad5ed",
+                    "on-secondary-fixed": "#354053",
+                    "error-container": "#9f0519",
+                    "on-secondary": "#475266",
+                    "on-tertiary-fixed-variant": "#560094",
+                    "on-secondary-fixed-variant": "#515c70",
+                    "on-primary-container": "#002639",
+                    "surface-container": "#0f1930",
+                    "inverse-on-surface": "#4d556b",
+                    "on-error-container": "#ffa8a3",
+                    "on-tertiary": "#33005b",
+                    "surface": "#060e20",
+                    "on-surface": "#dee5ff",
+                    "tertiary-dim": "#9c48ea",
+                    "surface-tint": "#39b8fd",
+                    "primary": "#39b8fd",
+                    "tertiary-fixed": "#ce9bff",
+                    "on-primary-fixed-variant": "#003954",
+                    "on-tertiary-container": "#000000",
+                    "on-primary": "#00324a",
+                    "surface-variant": "#192540",
+                    "surface-bright": "#1f2b49",
+                    "secondary-fixed": "#d8e3fb",
+                    "surface-container-high": "#141f38",
+                    "primary-dim": "#17a8ec",
+                    "on-surface-variant": "#a3aac4",
+                    "outline-variant": "#40485d",
+                    "primary-fixed-dim": "#17a8ec",
+                    "error": "#ff716c",
+                    "on-primary-fixed": "#00121e",
+                    "tertiary-container": "#af5cfe",
+                    "background": "#060e20",
+                    "primary-fixed": "#34b5fa",
+                    "error-dim": "#d7383b",
+                    "surface-container-highest": "#192540",
+                    "tertiary": "#c180ff",
+                    "on-background": "#dee5ff",
+                    "outline": "#6d758c",
+                    "secondary-dim": "#cad5ed",
+                    "on-error": "#490006",
+                    "tertiary-fixed-dim": "#c488ff",
+                    "surface-container-low": "#091328",
+                    "inverse-primary": "#006591",
+                    "secondary": "#d8e3fb",
+                    "secondary-container": "#3c475a",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-lowest": "#000000",
+                    "primary-container": "#1faaef"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% -20%, #1faaef22 0%, #060e20 60%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#060e20]/60 backdrop-blur-xl shadow-2xl shadow-slate-950/20">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-100">Midnight Architect</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold text-sm tracking-tight">
+<a class="text-slate-400 font-medium hover:text-sky-300 transition-colors duration-300 scale-95 active:duration-75" href="#">Solutions</a>
+<a class="text-sky-400 border-b-2 border-sky-400 pb-1 hover:text-sky-300 transition-colors duration-300 scale-95 active:duration-75" href="#">About Us</a>
+<a class="text-slate-400 font-medium hover:text-sky-300 transition-colors duration-300 scale-95 active:duration-75" href="#">Contact</a>
+<a class="text-slate-400 font-medium hover:text-sky-300 transition-colors duration-300 scale-95 active:duration-75" href="#">Careers</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container px-6 py-2.5 rounded-full font-headline font-bold text-sm text-on-primary-container hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="hero-gradient px-6 py-24 md:py-40 max-w-screen-2xl mx-auto overflow-hidden">
+<div class="max-w-4xl mx-auto text-center space-y-8">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-variant text-tertiary font-label text-[10px] uppercase tracking-[0.2em] font-bold">Atmospheric Precision</span>
+<h1 class="text-5xl md:text-7xl font-headline font-black tracking-tighter leading-tight">Crafting the digital <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">infrastructure</span> of tomorrow.</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">We don't just build software. We architect environments where high-performance engineering meets human-centric intuition.</p>
+</div>
+</section>
+<!-- Our Story - Bento Grid -->
+<section class="px-12 py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface-container-high rounded-xl p-12 flex flex-col justify-end min-h-[400px] relative overflow-hidden">
+<div class="absolute inset-0 opacity-20" data-alt="Dark sophisticated office space with architectural blueprints and glowing blue accent lighting in a tech studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmBKadps1Z1Hg4kCJs9bFvy3Hu8CBAeRJWHO_RuvwEtZHDj6ZZ9CYU3oAliXo1VaTo8NIvC8ivqgrt7RtmB9X6lBDMAFZZ1wGD_LPRKVNlW_muUS-MXqT0YLsmKb7hB0m-7yZRorWgjsWlMSNeNkWLYPhCP-fL1l-1uzjbRZ-QpErO5tRCS1SobnDfHEJs6cFqgNeX3I4rMVnl58Z5Fql_oDhlUn6GVsSRvS118Rt3ILMtYWv7J2Omj3BLwtfWFn_JCK8VqPn649Q')"></div>
+<div class="relative z-10 space-y-4">
+<h2 class="text-3xl font-headline font-extrabold tracking-tight">Our Story</h2>
+<p class="text-on-surface-variant max-w-xl text-lg leading-relaxed">Born in the quiet hours of 2024, Midnight Architect was founded on a simple realization: the digital world is becoming too noisy. We set out to create a sanctuary of precision—software that works with surgical accuracy while maintaining an atmospheric soul.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-gradient-to-br from-tertiary-container to-surface-container-highest rounded-xl p-8 flex flex-col justify-center border-l border-tertiary/10">
+<span class="material-symbols-outlined text-4xl mb-4" data-icon="rocket_launch" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<h3 class="text-xl font-headline font-bold mb-2">The Mission</h3>
+<p class="text-on-tertiary-container/80 text-sm leading-relaxed">To provide the high-end technical bedrock for the next generation of visionary enterprises through superior design and code integrity.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-8 space-y-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="architecture">architecture</span>
+<h3 class="text-xl font-headline font-bold">Uncompromising Ethics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We value transparency over convenience. Our architecture is built to be audited, scaled, and trusted by the most demanding partners.</p>
+</div>
+<div class="md:col-span-8 bg-surface-variant rounded-xl p-8 flex items-center gap-12 overflow-hidden">
+<div class="hidden lg:block w-48 h-48 rounded-full border-[12px] border-surface-container-high relative flex-shrink-0">
+<div class="absolute inset-2 rounded-full bg-primary/20 animate-pulse"></div>
+</div>
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Why We Started</h3>
+<p class="text-on-surface-variant text-md leading-relaxed">The founders of Midnight Architect saw a gap between "enterprise power" and "designer elegance." We bridged that gap, creating a studio that speaks the language of both CTOs and Creative Directors.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="px-12 py-24 bg-surface">
+<div class="max-w-screen-2xl mx-auto space-y-16">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="max-w-2xl">
+<span class="text-tertiary font-label text-xs uppercase tracking-widest font-bold">DNA</span>
+<h2 class="text-4xl font-headline font-black mt-2">The Core Principles</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm text-right">The invisible forces that guide every line of code we ship and every pixel we place.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group">
+<div class="w-12 h-1 bg-primary mb-6 group-hover:w-full transition-all duration-500"></div>
+<h4 class="text-lg font-headline font-bold mb-3">Radial Innovation</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">We don't innovate in straight lines. We look at problems from every angle, ensuring our solutions solve for the immediate need and the distant future.</p>
+</div>
+<div class="group">
+<div class="w-12 h-1 bg-tertiary mb-6 group-hover:w-full transition-all duration-500"></div>
+<h4 class="text-lg font-headline font-bold mb-3">Stealth Performance</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Our systems are designed to be fast, silent, and efficient. We believe the best tech is the tech you never have to think about.</p>
+</div>
+<div class="group">
+<div class="w-12 h-1 bg-secondary-fixed-dim mb-6 group-hover:w-full transition-all duration-500"></div>
+<h4 class="text-lg font-headline font-bold mb-3">Human-Centric Void</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">We embrace white space and clean interfaces. Reducing cognitive load is our greatest architectural challenge and triumph.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="px-12 py-24 bg-surface-container-low rounded-t-[3rem]">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-20 space-y-4">
+<h2 class="text-4xl font-headline font-black tracking-tight">The Architects</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">The minds behind the atmospheric precision. A collective of engineers, designers, and visionaries.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Team Member 1 -->
+<div class="group space-y-4">
+<div class="aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Portrait of a male tech founder with glasses in a dark navy turtleneck looking thoughtfully at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClYESWGz139V0t3jIJ4fofDE34uP4U6dw3s32nHIRAwbM6guMrx2X54sf1LZkEChw8xSFdkw1DEml9G-WYn9ushxlxzN3x6eaAigXAMvgj27tURhQ0cPV3MI_Wdh3gEAY8OVdyVNv1CrH7-bs-IFaQTGDBFKu4dASpcPDv8qs90A2XKuCnKfuyrq-Q39XkNIEMk7Ygsim7cpUAy_ue3CCH8dFGHMS8zR1-jM7FmwXNhCBamabzz6jpqwhYR7-DmzfNx15po-IK8YY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-60"></div>
+</div>
+<div>
+<h5 class="text-lg font-headline font-bold">Julian Vane</h5>
+<p class="text-primary font-label text-xs uppercase tracking-widest font-semibold">Chief Architect</p>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">A pioneer in distributive systems with a focus on low-latency cloud infrastructure.</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group space-y-4">
+<div class="aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Professional woman with a confident smile, wearing a modern charcoal blazer against a dark studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnbmrSbXxwnc9syV8hQaji-0PAp4imvJeBPNBYid0DTi6kzc9VTGyZ6Ly7sNbDFX7B75e-LIiQ343G00RWfxyhG6kq_Q-IUWb4kYjyHQAZUrN3BnTlhkq6F5x-kqAYZAxIJpENp-m57PUdnb7-lnWjnaioPYgYk0WNXW3g_y0ppG8aAeTfTWoSVEMyWImDIiDRTO5oBpenLdZcEb26IoRFU64f6tGyk884escPfHDflC9hjxb9_gB2ueKeAbyB4pda-DS3nWjIkgg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-60"></div>
+</div>
+<div>
+<h5 class="text-lg font-headline font-bold">Elena Thorne</h5>
+<p class="text-tertiary font-label text-xs uppercase tracking-widest font-semibold">Director of Design</p>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">Specializing in atmospheric UI/UX and sensory-driven digital experiences.</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group space-y-4">
+<div class="aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Young male software engineer in a minimal tech workspace, soft cinematic lighting, deep blue color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvEW68wBp4EHoLUvwiecSQD7DKaXSykjB4cglbSWclwNjN5BPNcB2qjfKul06UvYacnzqpKKVbgg4ryG2WMYSXjazSfvkiK10Hhy457LKH52Zer7FCgWpUoICmExLcYoDfi-xFmeV7Ze_7l80yqfJiyh82RyRbJB76jrdxbRnFJeO5h546HGujA_GTlpjQoudKdyUJNvvw0xlJxw6N4Zsi94RbPzhQvJRXSq7XnNl30RSnk25b0EzAqyeigbR4S_3FHsS6fCyPYA8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-60"></div>
+</div>
+<div>
+<h5 class="text-lg font-headline font-bold">Marcus Chen</h5>
+<p class="text-primary font-label text-xs uppercase tracking-widest font-semibold">Lead Systems Engineer</p>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">Expert in high-performance computing and neural architecture integration.</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group space-y-4">
+<div class="aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Woman with short hair and modern jewelry, professional and tech-forward aesthetic in a moody lighting environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIcSQaSQr-NESfQ6luIsm80MNG_KBLxBh40b5XTGpXvUIN9EorTl5ydF-L0sY--B4q3j3xbu3ak4kurvWDWpoDiieD-6Otlv9xvjZ1Qsl9S20UxQ6ukPRWwDoW6LF2rTANFajMAvqJ-4PFDhu_AZ0cAhFV6oUiuX4HwYgo6_ninkyBdV0Fyzx85Te7VP2U-pUlL3NNT-7_txhYvR6v-uitYRbiLEnXD5oKCS5YVrYVa5rlGfK38CISMhH_yu4Es99wVZ0jTmb_7Nk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-60"></div>
+</div>
+<div>
+<h5 class="text-lg font-headline font-bold">Sasha Volkov</h5>
+<p class="text-tertiary font-label text-xs uppercase tracking-widest font-semibold">Head of Strategy</p>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">Connecting technical feasibility with global market evolution and ethics.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-12 py-32 bg-surface">
+<div class="max-w-4xl mx-auto bg-surface-container-highest rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/10 blur-[100px] rounded-full -ml-32 -mb-32"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-4xl md:text-5xl font-headline font-black tracking-tight">Join the nocturnal <span class="text-primary">revolution</span>.</h2>
+<p class="text-on-surface-variant text-lg max-w-xl mx-auto">Whether you're a potential partner or an architect looking for their next challenge, let's build something unforgettable.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+<button class="bg-gradient-to-br from-primary to-primary-container px-8 py-4 rounded-full font-headline font-bold text-on-primary-container hover:shadow-xl hover:shadow-primary/30 transition-all active:scale-95">
+                            View Open Careers
+                        </button>
+<button class="bg-secondary-container px-8 py-4 rounded-full font-headline font-bold text-on-secondary-container hover:bg-secondary-container/80 transition-all active:scale-95">
+                            Discuss Partnership
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] mt-20 bg-[#091328]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="md:col-span-1 space-y-4">
+<div class="text-lg font-black text-slate-200">Midnight Architect</div>
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">© 2024 Midnight Architect. Atmospheric Precision.</p>
+</div>
+<div class="space-y-4">
+<h6 class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">Navigation</h6>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100 font-['Inter'] text-sm" href="#">Solutions</a></li>
+<li><a class="text-purple-400 hover:text-slate-100 transition-all opacity-80 hover:opacity-100 font-['Inter'] text-sm" href="#">About Us</a></li>
+<li><a class="text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100 font-['Inter'] text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">Legal</h6>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100 font-['Inter'] text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100 font-['Inter'] text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-slate-100 transition-all opacity-80 hover:opacity-100 font-['Inter'] text-sm" href="#">Security</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500">Connect</h6>
+<div class="flex gap-4">
+<a class="text-slate-500 hover:text-sky-400 transition-all" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-slate-500 hover:text-sky-400 transition-all" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+<a class="text-slate-500 hover:text-sky-400 transition-all" href="#"><span class="material-symbols-outlined" data-icon="language">language</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

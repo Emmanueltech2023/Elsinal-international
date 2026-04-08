@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solutions | Midnight Architect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#060e20",
+                    "on-secondary-container": "#c5d1e8",
+                    "on-tertiary-fixed": "#270048",
+                    "secondary-fixed-dim": "#cad5ed",
+                    "on-secondary-fixed": "#354053",
+                    "error-container": "#9f0519",
+                    "on-secondary": "#475266",
+                    "on-tertiary-fixed-variant": "#560094",
+                    "on-secondary-fixed-variant": "#515c70",
+                    "on-primary-container": "#002639",
+                    "surface-container": "#0f1930",
+                    "inverse-on-surface": "#4d556b",
+                    "on-error-container": "#ffa8a3",
+                    "on-tertiary": "#33005b",
+                    "surface": "#060e20",
+                    "on-surface": "#dee5ff",
+                    "tertiary-dim": "#9c48ea",
+                    "surface-tint": "#39b8fd",
+                    "primary": "#39b8fd",
+                    "tertiary-fixed": "#ce9bff",
+                    "on-primary-fixed-variant": "#003954",
+                    "on-tertiary-container": "#000000",
+                    "on-primary": "#00324a",
+                    "surface-variant": "#192540",
+                    "surface-bright": "#1f2b49",
+                    "secondary-fixed": "#d8e3fb",
+                    "surface-container-high": "#141f38",
+                    "primary-dim": "#17a8ec",
+                    "on-surface-variant": "#a3aac4",
+                    "outline-variant": "#40485d",
+                    "primary-fixed-dim": "#17a8ec",
+                    "error": "#ff716c",
+                    "on-primary-fixed": "#00121e",
+                    "tertiary-container": "#af5cfe",
+                    "background": "#060e20",
+                    "primary-fixed": "#34b5fa",
+                    "error-dim": "#d7383b",
+                    "surface-container-highest": "#192540",
+                    "tertiary": "#c180ff",
+                    "on-background": "#dee5ff",
+                    "outline": "#6d758c",
+                    "secondary-dim": "#cad5ed",
+                    "on-error": "#490006",
+                    "tertiary-fixed-dim": "#c488ff",
+                    "surface-container-low": "#091328",
+                    "inverse-primary": "#006591",
+                    "secondary": "#d8e3fb",
+                    "secondary-container": "#3c475a",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-lowest": "#000000",
+                    "primary-container": "#1faaef"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(57, 184, 253, 0.08) 0%, rgba(6, 14, 32, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#060e20]/60 backdrop-blur-xl shadow-2xl shadow-slate-950/20">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-100">Midnight Architect</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-sky-400 border-b-2 border-sky-400 pb-1 font-['Manrope'] font-bold text-sm tracking-tight" href="#">Solutions</a>
+<a class="text-slate-400 font-medium hover:text-sky-300 transition-colors duration-300 font-['Manrope'] text-sm tracking-tight" href="#">About Us</a>
+<a class="text-slate-400 font-medium hover:text-sky-300 transition-colors duration-300 font-['Manrope'] text-sm tracking-tight" href="#">Contact</a>
+<a class="text-slate-400 font-medium hover:text-sky-300 transition-colors duration-300 font-['Manrope'] text-sm tracking-tight" href="#">Careers</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-container px-8 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative px-12 py-24 max-w-screen-2xl mx-auto hero-gradient">
+<div class="max-w-4xl">
+<span class="font-label text-tertiary uppercase tracking-[0.3em] text-[10px] font-bold mb-6 block">Technological Ecosystem</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[0.9]">
+                    Architecting <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Impossible</span> Systems.
+                </h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
+                    We provide the structural integrity and kinetic intelligence required for the next generation of digital infrastructure. Atmospheric precision in every line of code.
+                </p>
+</div>
+</section>
+<!-- Solutions Bento Grid -->
+<section class="px-12 py-20 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Feature Card 1: Software Development -->
+<div class="md:col-span-8 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between group overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div>
+<div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-8">
+<span class="material-symbols-outlined text-3xl">developer_mode_tv</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Adaptive Software Engineering</h3>
+<p class="font-body text-on-surface-variant max-w-xl leading-relaxed">
+                                Beyond simple builds. We engineer resilient, distributed systems that scale autonomously. Our software isn't just a tool; it's a living architecture designed to evolve with your enterprise demands.
+                            </p>
+</div>
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="flex flex-col">
+<span class="font-headline text-primary font-bold text-xl">99.99%</span>
+<span class="font-label text-[10px] uppercase text-outline">Uptime Target</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-primary font-bold text-xl">Cloud-Native</span>
+<span class="font-label text-[10px] uppercase text-outline">Framework</span>
+</div>
+</div>
+</div>
+<!-- Feature Card 2: AI Solutions -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-10 flex flex-col justify-between border border-outline-variant/10">
+<div>
+<div class="w-14 h-14 rounded-xl bg-tertiary/10 flex items-center justify-center text-tertiary mb-8">
+<span class="material-symbols-outlined text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Neural Intelligence</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                Implementing bespoke LLMs and predictive modeling to solve complex logistical challenges and automate high-stakes decision making.
+                            </p>
+</div>
+<div class="mt-8">
+<a class="text-tertiary font-bold text-sm inline-flex items-center gap-2 group" href="#">
+                                Explore AI Models
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Feature Card 3: Cybersecurity -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-10 flex flex-col justify-between border border-outline-variant/10">
+<div>
+<div class="w-14 h-14 rounded-xl bg-error/10 flex items-center justify-center text-error mb-8">
+<span class="material-symbols-outlined text-3xl">shield_locked</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Zero-Trust Security</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                Proactive defense mechanisms that neutralize threats before they materialize. We protect your perimeter with atmospheric precision.
+                            </p>
+</div>
+<div class="mt-8 space-y-2">
+<div class="h-1 w-full bg-surface-dim rounded-full overflow-hidden">
+<div class="h-full bg-error w-3/4"></div>
+</div>
+<span class="font-label text-[10px] text-outline uppercase">Threat Mitigation Active</span>
+</div>
+</div>
+<!-- Feature Card 4: Cloud Infra -->
+<div class="md:col-span-8 bg-surface-container-high rounded-xl p-0 flex flex-col md:flex-row group overflow-hidden">
+<div class="p-10 flex-1 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-xl bg-secondary-container flex items-center justify-center text-secondary mb-8">
+<span class="material-symbols-outlined text-3xl">filter_drama</span>
+</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Midnight Cloud Mesh</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">
+                                    Global infrastructure that operates in the shadows. Low latency, high redundancy, and fully managed environments that let you focus on growth.
+                                </p>
+</div>
+<div class="flex gap-2">
+<span class="bg-surface-variant px-4 py-1.5 rounded-full text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Multi-Region</span>
+<span class="bg-surface-variant px-4 py-1.5 rounded-full text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Edge-Native</span>
+</div>
+</div>
+<div class="w-full md:w-1/3 min-h-[200px] relative">
+<img class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700" data-alt="abstract tech visualization of a global data mesh with glowing nodes and interconnecting cyan lines on a dark blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxgYEWlJfOESbk38dpuv6b_YZn9Dz8q0CFAkIlspjnmHBWUkr9lDw0PSi6Ycts-C1NFQYtJBmseluWV5AxdsfJK3Kr072ssG-ze946aEQR1AhScoyG7O4cLTqlUjtOohoa_ZrtCrLUpldKdu9CFqzjKqCnhhIhQdICSW5q3UqCw1y7WB0ut3xtzNVCfnOpb0mFvVCspgZGPN5M0ZHJGK1lHjhoCCaHtpael86u6vWB-DHRLFDvGakHeGoVXbxhpSM9b5A8jyFt93c"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Problem/Solution Section -->
+<section class="px-12 py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl font-extrabold tracking-tight mb-6">Solving the Friction of Innovation.</h2>
+<p class="text-on-surface-variant text-lg">Modern problems require architectural solutions. We dismantle complexity to rebuild competitive advantage.</p>
+</div>
+<div class="flex gap-4">
+<div class="text-right">
+<p class="font-headline text-4xl font-bold text-primary">12ms</p>
+<p class="font-label text-[10px] text-outline uppercase">Global Latency</p>
+</div>
+<div class="w-px h-12 bg-outline-variant/30"></div>
+<div class="text-right">
+<p class="font-headline text-4xl font-bold text-tertiary">2.4PB</p>
+<p class="font-label text-[10px] text-outline uppercase">Daily Throughput</p>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Problem Item 1 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-colors p-12 rounded-xl flex flex-col md:flex-row gap-12 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-full border border-primary/20 flex items-center justify-center text-primary">
+<span class="font-headline text-2xl font-black">01</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline text-2xl font-bold mb-4">Legacy Rigidity</h4>
+<p class="text-on-surface-variant leading-relaxed">Most enterprises are held back by monolithic systems that can't pivot. We architect microservices-based transformations that decouple your business logic from your infrastructure, allowing for rapid feature deployment without system-wide risk.</p>
+</div>
+<div class="md:w-1/3 bg-surface-container-highest p-6 rounded-lg border-l-4 border-primary">
+<span class="font-label text-[10px] text-primary uppercase font-bold block mb-2">Architectural Fix</span>
+<p class="text-xs text-on-surface italic">"Decoupled Containerization &amp; Event-Driven Flows"</p>
+</div>
+</div>
+<!-- Problem Item 2 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-colors p-12 rounded-xl flex flex-col md:flex-row gap-12 items-start">
+<div class="flex-shrink-0 w-16 h-16 rounded-full border border-tertiary/20 flex items-center justify-center text-tertiary">
+<span class="font-headline text-2xl font-black">02</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline text-2xl font-bold mb-4">Information Blindness</h4>
+<p class="text-on-surface-variant leading-relaxed">Companies are drowning in data but starving for insight. Our AI Solutions extract signal from the noise, providing real-time predictive analytics that anticipate market shifts before they happen.</p>
+</div>
+<div class="md:w-1/3 bg-surface-container-highest p-6 rounded-lg border-l-4 border-tertiary">
+<span class="font-label text-[10px] text-tertiary uppercase font-bold block mb-2">Architectural Fix</span>
+<p class="text-xs text-on-surface italic">"Neural Signal Processing &amp; Synthetic Data Layering"</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-12 py-20">
+<div class="max-w-screen-2xl mx-auto">
+<div class="bg-gradient-to-br from-surface-container-high to-surface-container-lowest p-16 rounded-[2rem] text-center border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="fine technical wireframe grid texture with subtle glowing points, futuristic and high-tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1XFEnFPWFpEul4pax4KSNK2qW_dAcwr176IAnZGZ_4b3jpojvkh_rH0tT7QK0u93Lom7A8fdCl5TfZRUITfAKB8ZwrpxXU9bYTCTRya1kCTyYLy1HroKKjGGEVfnRtpa8LlEgqY81jhv2suI8mnUVNdcVnPaGWvHD_X5nMj9p9yqgOqL3t061h5Y1EraRDbEOIsqm1Av1UGvkZKxDcDIAtBjDh_mIMmUW61bql9rFX8xXex4G-Se41zVoqIMOlFyoOxJlUCTLuj4"/>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl font-black mb-6 relative z-10">Ready to build the future?</h2>
+<p class="text-on-surface-variant text-lg mb-10 max-w-xl mx-auto relative z-10">Connect with our lead architects today for a precision audit of your current digital infrastructure.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4 relative z-10">
+<button class="bg-primary text-on-primary-container px-10 py-4 rounded-full font-bold hover:bg-primary-dim transition-colors">Start a Project</button>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-full font-bold hover:bg-outline-variant/20 transition-colors">View Technical Docs</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#091328] w-full rounded-t-[2rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-black text-slate-200 mb-6">Midnight Architect</div>
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 leading-relaxed">
+                    Atmospheric Precision. Engineering the invisible foundations of tomorrow.
+                </p>
+</div>
+<div>
+<h5 class="text-slate-100 font-bold mb-6 font-headline">Solutions</h5>
+<ul class="space-y-4 font-['Inter'] text-xs uppercase tracking-widest text-slate-500">
+<li><a class="hover:text-slate-100 transition-all" href="#">Cloud Engineering</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Neural Systems</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Digital Fortress</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Edge Mesh</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-slate-100 font-bold mb-6 font-headline">Company</h5>
+<ul class="space-y-4 font-['Inter'] text-xs uppercase tracking-widest text-slate-500">
+<li><a class="hover:text-slate-100 transition-all" href="#">Manifesto</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Lab Logs</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">The Team</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-slate-100 font-bold mb-6 font-headline">Legal</h5>
+<ul class="space-y-4 font-['Inter'] text-xs uppercase tracking-widest text-slate-500">
+<li><a class="hover:text-slate-100 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Terms of Service</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Security</a></li>
+<li><a class="hover:text-slate-100 transition-all" href="#">Status</a></li>
+</ul>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/10 max-w-screen-2xl mx-auto flex justify-between items-center">
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest text-slate-500">© 2024 Midnight Architect. Atmospheric Precision.</span>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-500 hover:text-primary transition-colors cursor-pointer">share</span>
+<span class="material-symbols-outlined text-slate-500 hover:text-primary transition-colors cursor-pointer">terminal</span>
+</div>
+</div>
+</footer>
+</body></html>

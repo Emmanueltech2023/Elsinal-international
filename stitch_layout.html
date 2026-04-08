@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#002204",
+                        "surface": "#001802",
+                        "on-tertiary-container": "#005c15",
+                        "inverse-on-surface": "#003909",
+                        "outline": "#8e937d",
+                        "outline-variant": "#444936",
+                        "surface-tint": "#acd53f",
+                        "primary-container": "#a6ce39",
+                        "primary": "#c1eb53",
+                        "surface-variant": "#003e0b",
+                        "inverse-primary": "#4e6700",
+                        "on-surface-variant": "#c4c9b1",
+                        "on-secondary-fixed": "#0f2000",
+                        "on-primary-fixed-variant": "#3a4d00",
+                        "surface-container-high": "#003207",
+                        "tertiary-container": "#82d37d",
+                        "tertiary-fixed": "#a3f69c",
+                        "secondary-container": "#4b7d00",
+                        "surface-dim": "#001802",
+                        "inverse-surface": "#acf4a4",
+                        "on-secondary": "#1e3700",
+                        "on-error": "#690005",
+                        "background": "#001802",
+                        "error": "#ffb4ab",
+                        "on-primary": "#273500",
+                        "secondary-fixed": "#b9f474",
+                        "on-tertiary": "#003909",
+                        "surface-container-low": "#002203",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-lowest": "#001201",
+                        "on-tertiary-fixed-variant": "#005312",
+                        "surface-container": "#002604",
+                        "primary-fixed-dim": "#acd53f",
+                        "on-surface": "#acf4a4",
+                        "primary-fixed": "#c8f25a",
+                        "tertiary-fixed-dim": "#88d982",
+                        "on-primary-fixed": "#151f00",
+                        "on-secondary-fixed-variant": "#2e4f00",
+                        "on-secondary-container": "#dfffb6",
+                        "secondary": "#9ed75b",
+                        "secondary-fixed-dim": "#9ed75b",
+                        "on-background": "#acf4a4",
+                        "surface-bright": "#00430c",
+                        "surface-container-highest": "#003e0b",
+                        "on-primary-container": "#405500",
+                        "error-container": "#93000a",
+                        "tertiary": "#9df096"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #001802; color: #acf4a4; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(0, 38, 4, 0.8); backdrop-filter: blur(24px); }
+        .hero-gradient { background: linear-gradient(180deg, #001802 0%, #002604 100%); }
+        .monolith-border { border: 1px solid rgba(68, 73, 54, 0.15); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-[#001802]/80 backdrop-blur-3xl no-border tonal-shift bg-[#002604]">
+<div class="flex items-center gap-2">
+<img alt="ELSINAL Green Logo" class="h-8 w-auto" data-alt="minimalist geometric logo for ELSINAL in vibrant growth green on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsmy3u73TUi5t4JBDzE6oaisyG3ryrfCOwWi-5Ykm11gI_MIKNOcWctRdD4E5tWBf-7u3hrCDwjVzqg7GTkSwy0WrAiTtu8ZeRiEMoDFvjQRzBtXodqE0xOTCzKLL9Y1cgGkF2MQ7nm3Ci_NvdyMS25JeIAaIzeQxLr79AKEycxnYzLLF7yrAIa9S0H8aVqkYeZ8mbkHv0pg5_YlLkePzg8-VhneAtFcMu_hFCwtKQO2gbB0bu7LpTHPl5UneUSpxxDWqgK6qlKwk"/>
+<span class="text-2xl font-black text-[#acf4a4] tracking-tighter font-headline">ELSINAL</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Manrope'] font-bold tracking-tight text-on-surface text-[#c1eb53] font-bold border-b-2 border-[#c1eb53] pb-1" href="#">Product</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-on-surface text-[#c4c9b1] hover:text-[#acf4a4] transition-colors" href="#">Services</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-on-surface text-[#c4c9b1] hover:text-[#acf4a4] transition-colors" href="#">Academy</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-on-surface text-[#c4c9b1] hover:text-[#acf4a4] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-md font-bold hover:scale-95 active:scale-90 transition-transform">
+            Get Started
+        </button>
+</nav>
+<main class="pt-24">
+<!-- Hero: The Verdant Monolith -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-surface via-surface/40 to-surface"></div>
+<img alt="Global Data Network" class="w-full h-full object-cover opacity-20" data-alt="abstract digital connection network representing global growth and high-tech infrastructure with deep green light trails" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKqk66sl8mhJ88_7F_ayCNEMgvuVXB-jGs_myoEnG3nJdl0mhmq1lBWpXJ12geyMzrDL9a8rAzaJDO9JlOvmB6JhqsiposA9wxjPRQBEkezDLJflYXsPNvko6kJ3Tj0KTcWfcA2IXY9_J73BNocDWSDHcMZlFfA1zUUH8riF5VWjX1heW815hhW2MA1iDd7dDjsCSrJukSaivwhTB8W3IgqvemQWB-lxbJO1tWh4cTKfgsWwEptrjXFgGm1g4h1iTdh_29HxAf2QA"/>
+</div>
+<div class="relative z-10 max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold mb-6">
+<span class="material-symbols-outlined text-sm">auto_graph</span>
+                    SECURE DIGITAL GROWTH ECOSYSTEM
+                </div>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface leading-none mb-8">
+                    The Future is <br/><span class="text-primary italic">Verdant.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                    ELSINAL architected a monolithic security-first ecosystem for institutional grade growth. From market intelligence to academic excellence, we build the foundations of digital sovereignty.
+                </p>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary font-bold rounded-md flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+                        Explore the Ecosystem <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-4 monolith-border bg-surface-container-highest/20 backdrop-blur-md text-on-surface font-bold rounded-md hover:bg-surface-container-highest/40 transition-all">
+                        Watch Mission Briefing
+                    </button>
+</div>
+</div>
+</section>
+<!-- The Ecosystem Bento Grid -->
+<section class="px-8 md:px-16 py-24 bg-surface-container">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<h2 class="text-4xl font-headline font-bold text-on-surface">Integrated Sovereignty</h2>
+<p class="text-on-surface-variant mt-2">The four pillars of ELSINAL digital dominance.</p>
+</div>
+<div class="text-sm font-label text-primary flex items-center gap-2">
+                    01 // SYSTEM CAPABILITIES <span class="w-12 h-[1px] bg-primary"></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- TradeEl -->
+<div class="md:col-span-8 bg-surface-container-high rounded-xl p-8 relative overflow-hidden group hover:bg-surface-container-highest transition-colors duration-500">
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">candlestick_chart</span>
+<h3 class="text-3xl font-headline font-bold mb-2">TradeEl</h3>
+<p class="text-on-surface-variant max-w-md">Institutional algorithmic trading platform with zero-latency execution and sovereign risk-management protocols.</p>
+</div>
+<div class="flex gap-4">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-xs text-primary border border-primary/20">Real-time Analytics</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full text-xs text-primary border border-primary/20">AI Signal Core</span>
+</div>
+</div>
+<img alt="Trading Dashboard" class="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity" data-alt="macro shot of complex stock market glowing green charts on a dark terminal screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSN_oMEj0PuBW-4xmJd5DWIaZ-Eg78Im5WnmAyL2fXPSot7_Vg6tfEYUxYiEQQjN8ma06SrNC4xICbb6y9dJHk3VPDK0JwcLJuG4DJcfPiDA1nFmpcvXmXr-y-YxF-jK9oDyqeuWr3WR1dVmlrAAeqEGM0SOwGrJaDZqLAlg23Q34eAYfpuJAj-GiGzqPUz5726ojpNSQhngKtSMmiR8IvKzb9a8-R9p_R5yzILiDyFLwF86olJEPdjZXIWJPr30uFwR8YYynOmOI"/>
+</div>
+<!-- iVest -->
+<div class="md:col-span-4 bg-tertiary-container/10 backdrop-blur-xl rounded-xl p-8 monolith-border flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">account_balance_wallet</span>
+<h3 class="text-3xl font-headline font-bold mb-2">iVest</h3>
+<p class="text-on-surface-variant">Secure asset management vault for generational wealth compounding and digital diversification.</p>
+</div>
+<a class="text-tertiary flex items-center gap-2 font-bold hover:gap-4 transition-all" href="#">Access Vault <span class="material-symbols-outlined">arrow_right_alt</span></a>
+</div>
+<!-- Elmart -->
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">shopping_cart</span>
+<h3 class="text-3xl font-headline font-bold mb-2">Elmart</h3>
+<p class="text-on-surface-variant">The commerce gateway for the ELSINAL ecosystem, featuring exclusive hardware and software utilities.</p>
+</div>
+<div class="h-32 bg-surface-container-lowest rounded-lg border border-outline-variant/10 flex items-center justify-center italic text-on-surface-variant/50">
+                        Ecosystem Marketplace Alpha
+                    </div>
+</div>
+<!-- ELSINAL Institute -->
+<div class="md:col-span-8 bg-surface-bright rounded-xl p-8 relative overflow-hidden flex flex-col md:flex-row gap-8">
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4">school</span>
+<h3 class="text-3xl font-headline font-bold mb-2">ELSINAL Institute</h3>
+<p class="text-on-surface-variant">Elite academy for digital mastery. Training the next generation of ecosystem architects and market analysts.</p>
+</div>
+<button class="mt-4 px-6 py-3 bg-on-surface text-surface font-bold rounded-md self-start">Enrol Now</button>
+</div>
+<div class="flex-1 flex flex-col gap-3 justify-center">
+<div class="p-4 bg-surface-container/40 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">01</div>
+<span class="text-sm font-bold">Market Psychology Core</span>
+</div>
+<div class="p-4 bg-surface-container/40 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">02</div>
+<span class="text-sm font-bold">Advanced Cryptoeconomics</span>
+</div>
+<div class="p-4 bg-surface-container/40 rounded-lg flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">03</div>
+<span class="text-sm font-bold">Algorithmic Strategy</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Harrison David Vision Section -->
+<section class="px-8 md:px-16 py-32 bg-surface overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-20">
+<div class="relative w-full md:w-1/2 aspect-[4/5]">
+<div class="absolute -top-6 -left-6 w-32 h-32 border-t-4 border-l-4 border-primary/30"></div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-primary/30"></div>
+<img alt="Harrison David" class="w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-1000" data-alt="professional portrait of a visionary man in a dark suit with a confident expression, dramatic lighting, deep green background shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_XwbeKgKO-h1Zu5l5FWGBIF3saGHkAomAkU__xaFMj29e9hpz17PUdkYjJglIFDOt3FytI2Ef6AUuDqPN55cjt6ByrOH-cTwnylpB0_5TInO6stM8CLCGEKmQWkjBoKHH1lyN3XNzysOsE7Y9X2wksJBbthlti1H_CSwVDJEz9sjSEQJ-a3bOrPJAsQSWiU7fDU2U2qu2HnURlFkPrx2tCJdJMM1HNvx_kOYCjXY_RvfWMOwFP9SzjXL8TKciM_55e-sskeE1Ggs"/>
+</div>
+<div class="w-full md:w-1/2">
+<h4 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Founder's Vision</h4>
+<h2 class="text-5xl font-headline font-extrabold text-on-surface mb-8 leading-tight">Architecture of <br/>Absolute Growth</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>
+                            "ELSINAL wasn't built to be another platform. It was built to be a monolith—a stable, unyielding foundation for those who demand more from the digital world."
+                        </p>
+<p>
+                            Harrison David's journey began with a single question: How do we protect growth in an era of volatility? His answer became the ELSINAL ecosystem. By blending high-frequency intelligence with sovereign data architecture, he created a sanctuary for high-net-worth digital ambition.
+                        </p>
+<p class="font-headline font-bold text-on-surface border-l-4 border-primary pl-6 py-2 italic">
+                            "True sovereignty is the ability to grow without permission."
+                        </p>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div>
+<p class="text-on-surface font-bold text-xl">Harrison David</p>
+<p class="text-on-surface-variant text-sm">Chief Architect, ELSINAL</p>
+</div>
+<img alt="Signature" class="h-12 opacity-50 invert" data-alt="stylized handwritten signature in white ink on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP4Sj_p7pCWjTWSDH4euhmeYzzzeyoAke2uDXgs5imgmdiALnRs8TrcrqTbAYjWYq_zfO9m1NCiZb0_p1L8_52iibsXfM9XdfSkQ6VXBZkSk_9vmvoIB9Sc9Y5zR87IrVbokfKxzfJsCBp3Lon6vd6OcOYl3vOTJnUEHrBZ6KqkMRFt27zOV_h7bURdSuxq2UAeyb6xucML-1Mk_EFYdisMjnCZYLBZ4kACYoYru-Po8XKCcEA0vJxYJVJ2XMNyyH_mdXJebqTXuU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Secure Vault Component -->
+<section class="px-8 py-24 flex justify-center">
+<div class="w-full max-w-5xl bg-tertiary-container/10 glass-panel rounded-2xl p-12 monolith-border flex flex-col md:flex-row justify-between items-center gap-12 relative">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-primary/20 text-9xl">lock</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl font-headline font-bold text-tertiary mb-4">The Security Vault</h2>
+<p class="text-on-surface-variant max-w-md text-lg">
+                        Our proprietary 'Verdant Guard' protocol ensures that every transaction, every byte of data, and every strategic move is encrypted within our private cloud infrastructure.
+                    </p>
+<ul class="mt-8 space-y-4">
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Quantum-Resistant Layer-0 Encryption
+                        </li>
+<li class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Biometric Institutional Access
+                        </li>
+</ul>
+</div>
+<div class="relative z-10 w-full md:w-auto">
+<div class="bg-surface p-6 rounded-xl monolith-border">
+<div class="flex justify-between items-center mb-6">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant">System Status</span>
+<span class="px-2 py-1 bg-primary/20 text-primary text-[10px] font-bold rounded">OPERATIONAL</span>
+</div>
+<div class="space-y-4">
+<div class="h-2 w-48 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-4/5"></div>
+</div>
+<div class="h-2 w-32 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-3/4"></div>
+</div>
+<div class="h-2 w-40 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-5/6"></div>
+</div>
+</div>
+<button class="w-full mt-8 py-3 bg-tertiary-container text-on-tertiary-container font-bold rounded">Request Institutional Access</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6 bg-[#001802] tonal-shift border-t border-[#444936]/15 font-['Inter'] text-sm tracking-wide">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-bold text-[#acf4a4] font-headline">ELSINAL</div>
+<p class="text-[#c4c9b1] text-center md:text-left">© 2024 ELSINAL. Secure Digital Growth Ecosystem.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#c4c9b1] hover:text-[#c1eb53] underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-[#c4c9b1] hover:text-[#c1eb53] underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-[#c4c9b1] hover:text-[#c1eb53] underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Security Vault</a>
+<a class="text-[#c4c9b1] hover:text-[#c1eb53] underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Institutional Access</a>
+</div>
+<div class="flex gap-4">
+<a class="p-2 rounded-full monolith-border hover:bg-surface-bright transition-colors" href="#">
+<img alt="LinkedIn" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo0lgeCS5_furT0B-qyXi5akX0uB18qzgvbJN4E0kLjYXjYbZgAoBmm5U_KaiqK5u-dhPMGCjZp2SFXkxgTo0joypS2jv1sHA-lnaHqFwKuYqA3d_WEDJJ52EsZRcaJosg9mH_jj9Z2YoFg_rdG8h14hUSOpPvg3qLuUIm-ou8z9qfWYdtf877NwHn0dFntBjzWq25EnRhdsw8OWjJmqDKtR9pjk1lVAW_KUgAhvl0lNkchH8Gg-hLNo3205oK_Z_ycCrg-UHxqRo"/>
+</a>
+<a class="p-2 rounded-full monolith-border hover:bg-surface-bright transition-colors" href="#">
+<img alt="X" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq2x-H6jDxTyq60dE5Kw_pl0Rxt26ZkADU7oBn6zYKLVAI7opxNkT20rgIFtRdFQXlRrY-ncNGJHQnA1YpS-VyOcZoZ7EQd_VlUm98wm9gihS4RdoCrWA0FFbuioWav2C-BhBIv0rS25rNdCJOcrfijifxBMdAn2rkNPc1TpWXnp7dO79uKvwG2m-Nfv_qAgRGexKIdsxezCVaFhwrwT2jqEAUer6y5WgbW2I7nVJpcmOX8Y-qdTtxDrDdVvmEkDYHsX7504NNTXA"/>
+</a>
+</div>
+</footer>
+</body></html>
