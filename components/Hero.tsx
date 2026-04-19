@@ -1,11 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Globe, Cpu, Layers, ShieldCheck } from "lucide-react";
+import { Globe, Cpu, Layers, ShieldCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
-  // --- PDF-ALIGNED TYPEWRITER LOGIC ---
   const words = ["SECURITY-FIRST SYSTEMS", "STRUCTURED INNOVATION", "GLOBAL VERIFICATION"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -15,7 +14,6 @@ export default function Hero() {
   useEffect(() => {
     const handleTyping = () => {
       const fullWord = words[currentWordIndex];
-      
       if (!isDeleting) {
         setCurrentText(fullWord.substring(0, currentText.length + 1));
         setSpeed(80);
@@ -26,127 +24,127 @@ export default function Hero() {
 
       if (!isDeleting && currentText === fullWord) {
         setTimeout(() => setIsDeleting(true), 2000);
-      } 
-      else if (isDeleting && currentText === "") {
+      } else if (isDeleting && currentText === "") {
         setIsDeleting(false);
         setCurrentWordIndex((prev) => (prev + 1) % words.length);
       }
     };
-
     const timeout = setTimeout(handleTyping, speed);
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, currentWordIndex, speed]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent pt-32 pb-20 px-4 md:px-0">
-      {/* Background Brand Glows */}
-      <div className="absolute top-1/4 left-1/4 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-[#A6CE39]/10 rounded-full blur-[80px] md:blur-[120px] pointer-events-none animate-pulse" />
+    /* Changed bg-[#051007] to bg-transparent */
+    <section className="relative min-h-[100dvh] flex flex-col justify-between overflow-hidden bg-transparent pt-32 pb-12 px-6 md:px-12">
       
-      <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto"
-        >
-          {/* Top Badge */}
+      {/* 1. Subtle Dark Overlay (Ensures text stays readable over video) */}
+      <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      
+      {/* 2. Brand Glows (Adjusted opacity to blend with video) */}
+      <div className="absolute top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-[#A6CE39]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-[#1B5E20]/10 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="relative z-10 w-full max-w-screen-2xl mx-auto flex flex-col flex-grow">
+        {/* TOP NAV-STRIP */}
+        <div className="flex flex-wrap justify-between items-center border-b border-white/10 pb-6 mb-12">
+                  {/* Top Badge */}
+
           <motion.div
+
             initial={{ opacity: 0, scale: 0.9 }}
+
             animate={{ opacity: 1, scale: 1 }}
+
             transition={{ delay: 0.2 }}
+
             className="inline-flex items-center gap-2 px-3 py-2 mb-6 md:mb-8 rounded-full bg-[#0a1e10]/60 border border-[#A6CE39]/30 text-[#A6CE39] text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] backdrop-blur-md"
+
           >
+
             <ShieldCheck size={12} className="animate-pulse" />
+
             EL SYSTEM INTERNATIONAL
+
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="hidden md:flex items-center gap-8 text-[9px] font-black uppercase tracking-[0.2em] text-[#A6CE39]/80"
+          >
+           
+          </motion.div>
+        </div>
+
+        {/* MAIN HERO CONTENT */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end flex-grow pb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-8"
+          >
+            <h1 className="text-[3.5rem] sm:text-5xl md:text-[8rem] lg:text-[7rem] font-black leading-[0.85] tracking-tighter text-white uppercase italic">
+              BUILDING <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/60 to-white/10">
+                STABILITY.
+              </span>
+            </h1>
           </motion.div>
 
-          {/* Main Headline */}
-          <h1 className="text-[2.6rem] sm:text-6xl md:text-8xl lg:text-[7.5rem] font-[900] mb-6 md:mb-8 leading-[0.9] tracking-tighter text-white uppercase italic">
-            TRUSTED <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A6CE39] via-[#f0fdf4] to-[#A6CE39]/50">
-              DIGITAL SYSTEMS.
-            </span>
-          </h1>
-
-          {/* --- DESCRIPTION --- */}
-          <div className="text-base md:text-2xl text-[#a8c2a8] mb-10 md:mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Building reliable, scalable, and globally relevant platforms focused on
-            <div className="block mt-2 min-h-[1.5em]">
-              <span className="text-white font-black uppercase tracking-widest text-sm md:text-xl border-b-2 border-[#A6CE39]">
-                {currentText}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="lg:col-span-4 lg:pb-6"
+          >
+            <p className="text-lg md:text-xl text-[#eaf5ea] leading-tight font-light italic mb-6 drop-shadow-lg">
+              ELSINAL architected systems prioritize the protection of users, data, and global transactions.
+            </p>
+            <div className="h-px w-full bg-gradient-to-r from-[#A6CE39] to-transparent mb-6" />
+            <div className="min-h-[1.5em]">
+              <span className="text-white font-black uppercase tracking-widest text-xs md:text-sm drop-shadow-md">
+                Focus: {currentText}
               </span>
-              <motion.span 
-                animate={{ opacity: [1, 0] }}
-                transition={{ repeat: Infinity, duration: 0.6 }}
-                className="inline-block w-[3px] h-[1em] bg-[#A6CE39] ml-1 align-middle"
-              />
             </div>
-          </div>
+          </motion.div>
+        </div>
 
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full sm:w-auto bg-[#A6CE39] text-[#051007] font-black px-8 md:px-12 py-4 md:py-6 text-sm md:text-lg rounded-sm sm:skew-x-[-12deg] hover:shadow-[0_0_30px_rgba(166,206,57,0.3)] transition-all group"
-            >
-              <span className="sm:skew-x-[12deg] flex items-center justify-center gap-3 italic">
-                EXPLORE PRODUCTS <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
-              </span>
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full sm:w-auto bg-transparent border-2 border-[#A6CE39]/20 text-white font-black px-8 md:px-12 py-4 md:py-6 text-sm md:text-lg rounded-sm sm:skew-x-[-12deg] hover:bg-[#A6CE39]/5 transition-all italic"
-            >
-              <span className="sm:skew-x-[12deg]">VIEW SERVICES</span>
-            </motion.button>
-          </div>
-        </motion.div>
-
-        {/* PDF Pillar Categories */}
+        {/* BOTTOM PILLAR GRID */}
         <motion.div 
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto"
+          transition={{ delay: 0.8 }}
+          className="grid grid-cols-1 sm:grid-cols-3 gap-1 border-t border-white/10"
         >
           {[
-            { 
-              icon: Layers, 
-              label: "01. PRODUCT ECOSYSTEM", 
-              text: "Innovation Platforms", 
-              desc: "TradeEl • Elmart • iVest" 
-            },
-            { 
-              icon: Cpu, 
-              label: "02. TECH SERVICES", 
-              text: "Professional Solutions", 
-              desc: "Web2/Web3 • AI • Blockchain" 
-            },
-            { 
-              icon: Globe, 
-              label: "03. ELSINAL INSTITUTE", 
-              text: "Talent Development", 
-              desc: "Hands-on Practical Academy" 
-            },
+            { icon: Layers, title: "Product Ecosystem", desc: "Secure trading & investment platforms.", sub: "TradeEl / Elmart / iVest" },
+            { icon: Cpu, title: "Tech Services", desc: "High-load engineering and AI.", sub: "Web2 / Web3 / Automation" },
+            { icon: Globe, title: "Elsinal Institute", desc: "Building the next talent pipeline.", sub: "Technical Academy" },
           ].map((item, idx) => (
-            <div key={idx} className="group text-left p-6 md:p-8 rounded-2xl bg-[#0a1e10]/40 border border-white/5 backdrop-blur-sm hover:border-[#A6CE39]/30 transition-all duration-500 overflow-hidden">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-2.5 bg-[#051007] rounded-lg border border-[#A6CE39]/20 group-hover:bg-[#A6CE39] group-hover:text-[#051007] transition-all">
-                  <item.icon size={18} />
-                </div>
-                <span className="text-[9px] font-black text-[#A6CE39] tracking-[0.2em]">{item.label}</span>
+            <div key={idx} className="group relative p-8 bg-black/10 backdrop-blur-[2px] hover:bg-white/[0.05] transition-colors border-r border-white/5 last:border-r-0">
+              <div className="flex items-start justify-between mb-8">
+                <item.icon size={20} className="text-[#A6CE39] opacity-40 group-hover:opacity-100 transition-opacity" />
+                <span className="text-[10px] font-black text-white/20">0{idx + 1}</span>
               </div>
-              <h4 className="text-lg md:text-xl font-black text-white mb-1 uppercase italic tracking-tighter">{item.text}</h4>
-              <p className="text-[10px] md:text-xs text-[#a8c2a8] font-bold uppercase tracking-widest">{item.desc}</p>
+              <h4 className="text-xl font-black text-white mb-2 uppercase italic drop-shadow-md">{item.title}</h4>
+              <p className="text-xs text-[#eaf5ea] font-light mb-4 drop-shadow-sm">{item.desc}</p>
+              <p className="text-[9px] font-black text-[#A6CE39] tracking-[0.2em] uppercase">{item.sub}</p>
             </div>
           ))}
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-[#051007] to-transparent pointer-events-none" />
+      {/* FOOTER DATA STREAM */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden whitespace-nowrap py-2 border-t border-white/5 bg-black/20 backdrop-blur-md">
+        <motion.div 
+          animate={{ x: [0, -1000] }}
+          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+          className="inline-block text-[8px] font-black text-white/30 uppercase tracking-[0.5em]"
+        >
+          SECURITY • STRUCTURE • VERIFICATION • SCALABILITY • DECENTRALIZED • $ELM TOKEN • GLOBAL INFRASTRUCTURE • 
+          SECURITY • STRUCTURE • VERIFICATION • SCALABILITY • DECENTRALIZED • $ELM TOKEN • GLOBAL INFRASTRUCTURE • 
+        </motion.div>
+      </div>
     </section>
   );
 }

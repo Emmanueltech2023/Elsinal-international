@@ -43,14 +43,14 @@ export default function ServicesPage() {
           <div className="absolute top-1/2 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#A6CE39]/5 blur-[80px] md:blur-[120px] rounded-full pointer-events-none -translate-y-1/2"></div>
           <div className="max-w-5xl relative z-10 text-left">
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#0a1e10] border border-[#A6CE39]/30 text-[#A6CE39] text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] mb-6 md:mb-8">
-              Technical Excellence
+              Professional Solutions
             </span>
-            <h1 className="text-5xl sm:text-6xl md:text-9xl font-[900] tracking-tighter text-white mb-8 md:mb-10 leading-[0.9] uppercase">
-              PRECISION <br />
-              <span className="opacity-30 italic">ENGINEERING.</span>
+            <h1 className="text-4xl sm:text-6xl md:text-9xl font-[900] tracking-tighter text-white mb-8 md:mb-10 leading-[0.9] uppercase">
+              Elsinal <br />
+              <span className="opacity-30 italic">specializes</span><span className=" text-[#A6CE39]"> in</span>
             </h1>
-            <p className="text-lg md:text-2xl text-[#a8c2a8] max-w-3xl leading-relaxed font-light px-1">
-              We provide the elite infrastructure and human capital required to sustain global digital operations. We build systems that don't just work—they <span className="text-white italic font-medium">dominate.</span>
+            <p className="text-lg md:text-2xl text-[#a8c2a8] max-w-3xl leading-relaxed font-light px-1 italic">
+              Deploying secure digital systems and professional tech services. We design for <span className="text-white font-medium">trust, access, and global scalability.</span>
             </p>
           </div>
         </section>
