@@ -37,46 +37,45 @@ export default function Home() {
 
         {/* Stats Bar - Optimized Grid for Mobile */}
       {/* Glassmorphism Marquee Stats Bar */}
-<section className="relative z-10 py-10 md:py-14 border-y border-[#A6CE39]/20 overflow-hidden">
-  
-  {/* The Glass Layer */}
-  <div className="absolute inset-0 bg-[#051007]/60 backdrop-blur-xl shadow-[inset_0_0_50px_rgba(166,206,57,0.05)]" />
+<section className="relative z-10 py-8 md:py-14 border-y border-[#A6CE39]/20 overflow-hidden">
+          {/* The Glass Layer */}
+          <div className="absolute inset-0 bg-[#051007]/60 backdrop-blur-xl shadow-[inset_0_0_50px_rgba(166,206,57,0.05)]" />
 
-  <div className="relative flex">
-    {/* The animation container */}
-    <div className="animate-marquee">
-      {[...Array(2)].map((_, listIdx) => (
-        <div key={listIdx} className="flex items-center">
-          {[
-            { val: "24/7", label: "System Monitoring" },
-            { val: "100%", label: "Secure Execution" },
-            { val: "GLOBAL", label: "Service Delivery" },
-            { val: "SCALABLE", label: "Architecture" },
-            { val: "VERIFIED", label: "P2P Infrastructure" },
-            { val: "AI-POWERED", label: "Fraud Detection" },
-          ].map((stat, i) => (
-            <div key={i} className="flex items-center px-10 md:px-20">
-              {/* Glowing Diamond Separator */}
-              <div className="w-1.5 h-1.5 bg-[#A6CE39] rotate-45 mx-10 md:mx-20 shadow-[0_0_12px_#A6CE39] opacity-60" />
-              
-              <div className="flex flex-col items-start">
-                <div className="text-3xl md:text-2xl font-[900] text-[#A6CE39] italic tracking-tighter leading-none drop-shadow-md">
-                  {stat.val}
+          <div className="relative flex">
+            {/* The animation container */}
+            <div className="flex animate-marquee whitespace-nowrap">
+              {[...Array(2)].map((_, listIdx) => (
+                <div key={listIdx} className="flex items-center">
+                  {[
+                    { val: "24/7", label: "Monitoring" },
+                    { val: "100%", label: "Secure" },
+                    { val: "GLOBAL", label: "Delivery" },
+                    { val: "SCALABLE", label: "Architecture" },
+                    { val: "VERIFIED", label: "P2P Infrastructure" },
+                    { val: "AI-POWERED", label: "Fraud Detection" },
+                  ].map((stat, i) => (
+                    <div key={i} className="flex items-center px-6 md:px-20">
+                      {/* Responsive Diamond Separator */}
+                      <div className="w-1 h-1 md:w-1.5 md:h-1.5 bg-[#A6CE39] rotate-45 mx-6 md:mx-20 shadow-[0_0_12px_#A6CE39] opacity-60" />
+                      
+                      <div className="flex flex-col items-start">
+                        <div className="text-xl md:text-3xl font-[900] text-[#A6CE39] italic tracking-tighter leading-none">
+                          {stat.val}
+                        </div>
+                        <div className="text-[7px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-white/60 font-black mt-1 md:mt-2">
+                          {stat.label}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <div className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-white/60 font-black mt-2">
-                  {stat.label}
-                </div>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+          </div>
+        </section>
 
         {/* Spacing adjustments for mobile sections */}
-        <div className="space-y-0 md:space-y-10">
+        <div className="flex flex-col gap-10 md:gap-20">
           <Ecosystem />
           <Services />
           <Academy />
