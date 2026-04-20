@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#051007] text-[#eaf5ea] selection:bg-[#A6CE39]/30 overflow-x-hidden">
+    <main className="min-h-screen bg-[#051007] text-[#eaf5ea] bg-transparent overflow-x-hidden">
       <Navbar />
 
       <div className="pt-20 md:pt-32">
@@ -58,9 +58,9 @@ export default function AboutPage() {
         </section>
 
         {/* 2. THE THREE PILLARS */}
-        <section className="px-5 md:px-12 py-20 bg-[#08170c] border-y border-white/5">
+        <section className="px-5 md:px-12 py-20bg-transparent border-y border-white/5">
           <div className="max-w-screen-2xl mx-auto">
-            <h2 className="text-center text-[#A6CE39] font-black uppercase tracking-[0.4em] text-[10px] mb-12">02. Core Business Areas</h2>
+            <h2 className="text-center text-[#A6CE39] font-black uppercase tracking-[0.4em] text-[12px] mb-12">02. Core Business Areas</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {/* Product Ecosystem */}
               <div className="p-8 md:p-10 bg-[#051007] border border-white/5 rounded-3xl">
@@ -167,7 +167,7 @@ export default function AboutPage() {
         </section>
 
         {/* 4. THE FOUNDER */}
-        <section id="founder" className="px-5 md:px-12 py-20 bg-[#08170c]">
+        <section id="founder" className="px-5 md:px-12 py-20 bg-transparent">
           <div className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-12 md:gap-16 items-center">
              <div className="w-full max-w-sm lg:w-1/3 relative">
                 <div className="aspect-[4/5] bg-[#0a1e10] rounded-[2rem] border border-[#A6CE39]/20 relative overflow-hidden">
@@ -228,16 +228,16 @@ export default function AboutPage() {
             </div>
 
             <div className="p-6 md:p-8 bg-[#A6CE39] rounded-2xl text-[#051007] md:col-span-2 lg:col-span-1">
-              <h5 className="font-black uppercase text-[10px] mb-6">Global Contact</h5>
+              <h5 className="font-black uppercase text-[10px] mb-6">Contacts</h5>
               <div className="space-y-4">
                 <p className="text-sm font-black italic break-words">elsysteminternational2@gmail.com</p>
                 <div className="flex gap-6">
                   <div>
-                    <p className="text-[8px] font-black uppercase opacity-60 mb-1">NG Branch</p>
+                    <p className="text-[8px] font-black uppercase opacity-60 mb-1">NG</p>
                     <p className="text-[10px] font-black">+234 904 529 4958</p>
                   </div>
                   <div>
-                    <p className="text-[8px] font-black uppercase opacity-60 mb-1">USA Branch</p>
+                    <p className="text-[8px] font-black uppercase opacity-60 mb-1">USA</p>
                     <p className="text-[10px] font-black">+1 380 205 4528</p>
                   </div>
                 </div>

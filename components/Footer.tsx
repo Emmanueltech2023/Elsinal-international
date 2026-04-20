@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faXTwitter, 
-  faLinkedinIn, 
+  faDiscord, 
   faTelegramPlane 
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -31,11 +31,11 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-1 mb-8">
               <div className="w-8 h-8 bg-[#A6CE39] flex items-center justify-center rounded-sm skew-x-[-12deg]">
                 <span className="text-[#051007] font-black skew-x-[12deg]">E</span>
               </div>
-              <span className="text-2xl font-black tracking-tighter">ELSINAL</span>
+              <span className="text-2xl font-black tracking-tighter">LSINAL</span>
             </div>
             
             <p className="text-[#a8c2a8] mb-10 max-w-sm leading-relaxed font-light">
@@ -144,9 +144,9 @@ export default function Footer() {
           {/* --- FONT AWESOME SOCIAL ICONS --- */}
           <div className="flex items-center gap-4">
             {[
-              { icon: faXTwitter, href: "#", label: "Twitter" },
-              { icon: faLinkedinIn, href: "#", label: "LinkedIn" },
-              { icon: faTelegramPlane, href: "#", label: "Telegram" },
+              { icon: faXTwitter, href: "https://X.com/Real_ESI_01", label: "Twitter" },
+              { icon: faDiscord, href: "https://discord.gg/FPez4fF8g", label: "Discord" },
+              { icon: faTelegramPlane, href: "https://t.me/elsysteminternational2", label: "Telegram" },
             ].map((social, idx) => (
               <motion.a
                 key={idx}

@@ -5,6 +5,7 @@ import { ArrowRight, Code, ShieldCheck, Cloud, Network, Users, Cpu, Rocket } fro
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Services from "@/components/Services";
 
 const TiltCard = ({ children, className }: { children: React.ReactNode, className?: string }) => {
   const x = useMotionValue(0);
@@ -34,7 +35,7 @@ const TiltCard = ({ children, className }: { children: React.ReactNode, classNam
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#051007] text-[#eaf5ea] selection:bg-[#A6CE39]/30 overflow-x-hidden">
+    <main className="min-h-screen bg-[#051007] text-[#eaf5ea] bg-transparent overflow-x-hidden">
       <Navbar />
 
       <div className="pt-24 md:pt-32">
@@ -45,7 +46,7 @@ export default function ServicesPage() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#0a1e10] border border-[#A6CE39]/30 text-[#A6CE39] text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] mb-6 md:mb-8">
               Professional Solutions
             </span>
-            <h1 className="text-4xl sm:text-6xl md:text-9xl font-[900] tracking-tighter text-white mb-8 md:mb-10 leading-[0.9] uppercase">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-[900] tracking-tighter text-white mb-8 md:mb-10 leading-[0.9] uppercase">
               Elsinal <br />
               <span className="opacity-30 italic">specializes</span><span className=" text-[#A6CE39]"> in</span>
             </h1>
@@ -56,8 +57,7 @@ export default function ServicesPage() {
         </section>
 
         {/* 2. CORE SOLUTIONS BENTO GRID */}
-        {/* 2. CORE SOLUTIONS BENTO GRID */}
-<section className="px-6 md:px-12 py-20 bg-[#08170c] border-y border-white/5">
+<section className="px-6 md:px-12 py-20 bg-transparent border-y border-white/5">
   <div className="max-w-screen-2xl mx-auto">
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
       
@@ -113,7 +113,7 @@ export default function ServicesPage() {
               Verified tech experts. Moderators and developers trained within our Institute.
             </p>
             <ul className="space-y-4 mt-auto">
-              {["Community Management", "KOL Networks"].map(item => (
+              {["Community Management", "KOL Networks,"].map(item => (
                 <li key={item} className="flex items-center gap-3 text-[10px] font-black text-white uppercase tracking-widest drop-shadow-lg">
                   <div className="w-2 h-2 bg-[#A6CE39] shadow-[0_0_10px_#A6CE39]" /> {item}
                 </li>
@@ -184,7 +184,7 @@ export default function ServicesPage() {
           <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between mb-16 md:mb-32 gap-10 md:gap-12">
             <div className="max-w-3xl">
               <h2 className="text-[10px] md:text-sm font-black text-[#A6CE39] tracking-[0.4em] uppercase mb-4 md:mb-6">Execution Framework</h2>
-              <h3 className="text-5xl md:text-8xl font-[900] tracking-tighter text-white leading-none uppercase">
+              <h3 className="text-5xl md:text-7xl font-[900] tracking-tighter text-white leading-none uppercase">
                 STRUCTURED <br /> <span className="opacity-20 italic">GROWTH.</span>
               </h3>
             </div>
@@ -192,25 +192,24 @@ export default function ServicesPage() {
               Every project enters the ELSINAL system through a structured pathway, ensuring technical integrity at every scale.
             </p>
           </div>
+
+         
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
             {[
               {
-                step: "01",
                 name: "Starter Tech Pack",
                 desc: "The essential foundation. High-performance landing pages, domain security, and professional infrastructure.",
                 features: ["Landing Page Dev", "SEO Engine", "Corporate Email"],
                 icon: <Rocket size={24} />
               },
               {
-                step: "02",
                 name: "Growth Engineering",
                 desc: "Scaling vision into a product. Custom web/mobile applications backed by resilient server architectures.",
                 features: ["Custom App MVP", "Backend API", "24/7 Monitoring"],
                 icon: <Cpu size={24} />
               },
               {
-                step: "03",
                 name: "Enterprise Scale",
                 desc: "The pinnacle. Full-scale blockchain integration, security audits, and dedicated engineering teams.",
                 features: ["Smart Contract Audit", "P2P Verification", "Global Balancing"],
@@ -219,7 +218,7 @@ export default function ServicesPage() {
             ].map((pack, i) => (
               <div key={i} className="group p-8 md:p-10 bg-[#0a1e10] border border-white/5 rounded-[2rem] hover:bg-[#0d2815] hover:border-[#A6CE39]/30 transition-all duration-500">
                 <div className="flex justify-between items-start mb-10 md:mb-12">
-                  <div className="text-4xl md:text-5xl font-black text-white/10 group-hover:text-[#A6CE39]/20 transition-colors tracking-tighter">{pack.step}</div>
+                  <div className="text-4xl md:text-5xl font-black text-white/10 group-hover:text-[#A6CE39]/20 transition-colors tracking-tighter"></div>
                   <div className="p-3 md:p-4 bg-[#051007] rounded-xl text-[#A6CE39] border border-white/10 shadow-lg">{pack.icon}</div>
                 </div>
                 <h4 className="text-xl md:text-2xl font-black text-white mb-4 md:mb-6 uppercase italic tracking-tight">{pack.name}</h4>
@@ -234,7 +233,9 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+           <Services />
         </section>
+        
       </div>
 
       <Footer />

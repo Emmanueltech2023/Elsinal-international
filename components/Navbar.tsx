@@ -113,7 +113,7 @@ export default function Navbar() {
                 {item.icon}
               </div>
               <span className={`text-[9px] font-black uppercase tracking-tighter transition-colors ${isActive(item.href) ? "text-[#A6CE39]" : "text-white/40"}`}>
-                {item.label === "Tech Services" ? "Tech" : item.label}
+                {item.label === "Tech Services" ? "Services" : item.label}
               </span>
             </Link>
           ))}
