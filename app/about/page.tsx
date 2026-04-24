@@ -184,7 +184,7 @@ export default function AboutPage() {
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6 text-sm text-[#a8c2a8] font-light leading-relaxed">
                   <p>
-                    Harrison Okon David leads the company’s vision, strategy, and overall ecosystem development with a focus on building real solutions, not just ideas.
+                    Harrison David leads the company’s vision, strategy, and overall ecosystem development with a focus on building real solutions, not just ideas.
                   </p>
                   <p>
                     Actively involved in architecture planning and strategic growth, positioning ELSINAL as a globally recognized technology leader.

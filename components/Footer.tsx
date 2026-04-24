@@ -120,6 +120,25 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+           {/* --- FONT AWESOME SOCIAL ICONS --- */}
+          <div className="flex items-center gap-4">
+            {[
+              { icon: faXTwitter, href: "https://X.com/Real_ESI_01", label: "Twitter" },
+              { icon: faDiscord, href: "https://discord.gg/FPez4fF8g", label: "Discord" },
+              { icon: faTelegramPlane, href: "https://t.me/elsysteminternational2", label: "Telegram" },
+            ].map((social, idx) => (
+              <motion.a
+                key={idx}
+                href={social.href}
+                whileHover={{ y: -3, scale: 1.1 }}
+                className="w-10 h-10 rounded-full bg-[#0a1e10] border border-white/10 flex items-center justify-center text-[#a8c2a8] hover:text-[#A6CE39] hover:border-[#A6CE39]/50 transition-all shadow-lg"
+                aria-label={social.label}
+              >
+                <FontAwesomeIcon icon={social.icon} className="text-lg" />
+              </motion.a>
+            ))}
+          </div>
         </div>
 
         {/* Bottom Bar */}
@@ -141,24 +160,7 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* --- FONT AWESOME SOCIAL ICONS --- */}
-          <div className="flex items-center gap-4">
-            {[
-              { icon: faXTwitter, href: "https://X.com/Real_ESI_01", label: "Twitter" },
-              { icon: faDiscord, href: "https://discord.gg/FPez4fF8g", label: "Discord" },
-              { icon: faTelegramPlane, href: "https://t.me/elsysteminternational2", label: "Telegram" },
-            ].map((social, idx) => (
-              <motion.a
-                key={idx}
-                href={social.href}
-                whileHover={{ y: -3, scale: 1.1 }}
-                className="w-10 h-10 rounded-full bg-[#0a1e10] border border-white/10 flex items-center justify-center text-[#a8c2a8] hover:text-[#A6CE39] hover:border-[#A6CE39]/50 transition-all shadow-lg"
-                aria-label={social.label}
-              >
-                <FontAwesomeIcon icon={social.icon} className="text-lg" />
-              </motion.a>
-            ))}
-          </div>
+         
         </div>
       </div>
     </footer>
