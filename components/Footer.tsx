@@ -120,8 +120,28 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+        </div>
 
-           {/* --- FONT AWESOME SOCIAL ICONS --- */}
+        {/* Bottom Bar */}
+        <div className="pt-12 pb-17 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-[#a8c2a8]">
+              © {currentYear} EL SYSTEM INTERNATIONAL
+            </p>
+            <div className="hidden md:flex gap-4">
+               <div className="flex items-center gap-1 text-[9px] font-black text-[#A6CE39]/50 tracking-tighter">
+                 <Shield size={10} /> SECURE
+               </div>
+               <div className="flex items-center gap-1 text-[9px] font-black text-[#A6CE39]/50 tracking-tighter">
+                 <Globe size={10} /> SCALABLE
+               </div>
+               <div className="flex items-center gap-1 text-[9px] font-black text-[#A6CE39]/50 tracking-tighter">
+                 <Zap size={10} /> STRUCTURED
+               </div>
+            </div>
+          </div>
+          
+          {/* --- FONT AWESOME SOCIAL ICONS --- */}
           <div className="flex items-center gap-4">
             {[
               { icon: faXTwitter, href: "https://X.com/Real_ESI_01", label: "Twitter" },
@@ -139,28 +159,6 @@ export default function Footer() {
               </motion.a>
             ))}
           </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-[#a8c2a8]">
-              © {currentYear} EL SYSTEM INTERNATIONAL (ELSINAL)
-            </p>
-            <div className="hidden md:flex gap-4">
-               <div className="flex items-center gap-1 text-[9px] font-black text-[#A6CE39]/50 tracking-tighter">
-                 <Shield size={10} /> SECURE
-               </div>
-               <div className="flex items-center gap-1 text-[9px] font-black text-[#A6CE39]/50 tracking-tighter">
-                 <Globe size={10} /> SCALABLE
-               </div>
-               <div className="flex items-center gap-1 text-[9px] font-black text-[#A6CE39]/50 tracking-tighter">
-                 <Zap size={10} /> STRUCTURED
-               </div>
-            </div>
-          </div>
-          
-         
         </div>
       </div>
     </footer>
