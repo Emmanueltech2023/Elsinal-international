@@ -110,10 +110,10 @@ export default function ServicesPage() {
             </div>
             <h3 className="text-2xl md:text-3xl font-black mb-6 uppercase tracking-tighter italic text-white">Talent Sourcing</h3>
             <p className="text-[#eaf5ea] leading-relaxed font-medium mb-8 text-sm md:text-base drop-shadow-md">
-              Verified tech experts. Moderators and developers trained within our Institute.
+              Verified tech experts.
             </p>
             <ul className="space-y-4 mt-auto">
-              {["Community Management", "KOL Networks,"].map(item => (
+              {["Community Management", "KOL Networks", "Content Creators"].map(item => (
                 <li key={item} className="flex items-center gap-3 text-[10px] font-black text-white uppercase tracking-widest drop-shadow-lg">
                   <div className="w-2 h-2 bg-[#A6CE39] shadow-[0_0_10px_#A6CE39]" /> {item}
                 </li>

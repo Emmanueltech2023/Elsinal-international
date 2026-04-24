@@ -26,7 +26,7 @@ export default function InteractiveBackground() {
       {/* LAYER 1: The Base Schematic (Your Generated Image) */}
       <motion.div 
         style={{ y: yRange }}
-        className="absolute inset-0 opacity-40 grayscale-[0.5] contrast-125 scale-110"
+        className="absolute inset-0 opacity-20 grayscale-[0.3] contrast-120 scale-110"
       >
         <img 
           src="/bg-schematic.png" 
