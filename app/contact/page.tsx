@@ -89,7 +89,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-[9px] font-black tracking-widest uppercase text-white/40 mb-1">WhatsApp</h4>
-                    <p className="text-sm md:text-base font-bold text-[#eaf5ea]">+234 904 529 4958</p>
+                    <p className="text-sm md:text-base font-bold text-[#eaf5ea]">+1 380 205 4528</p>
                   </div>
                 </div>
 
@@ -117,7 +117,7 @@ export default function ContactPage() {
                 
                 <div className="relative z-10">
                   <h3 className="text-2xl md:text-3xl font-black text-white mb-2 uppercase tracking-tighter">Send a Message</h3>
-                  <p className="text-xs md:text-sm text-[#a8c2a8] mb-8 font-light">Transmission secure. Auto-reply enabled.</p>
+                  <p className="text-xs md:text-sm text-[#a8c2a8] mb-8 font-light">Fill out the form to send us a message.</p>
                   
                   <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -181,12 +181,12 @@ export default function ContactPage() {
 
                     {status === "success" && (
                       <div className="flex items-center gap-2 text-[#A6CE39] font-black text-[10px] uppercase tracking-widest justify-center mt-4 animate-bounce">
-                        <CheckCircle size={14} /> Transmission Complete
+                        <CheckCircle size={14} /> Message Sent Successfully! We&apos;ll be in touch soon.
                       </div>
                     )}
                     {status === "error" && (
                       <div className="text-red-500 font-black text-[10px] uppercase text-center mt-4">
-                        Transmission Failed. Check Connection.
+                        Message Failed to Send. Check Connection.
                       </div>
                     )}
                   </form>
