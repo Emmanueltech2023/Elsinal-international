@@ -233,7 +233,6 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
-           <Services />
         </section>
         
       </div>

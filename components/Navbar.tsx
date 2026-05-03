@@ -33,16 +33,18 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            <div className="relative flex-shrink-0">
-              <Image
-                src="/logo3.png" 
-                alt="ELSINAL Logo"
-                width={38}
-                height={38}
-                className="z-10 relative brightness-110 md:w-[48px] md:h-[48px]"
-              />
-              <div className="absolute inset-0 bg-[#A6CE39]/20 blur-xl rounded-full scale-150"></div>
-            </div>
+         <div className="relative flex-shrink-0">
+  <Image
+    src="/logo3.png" 
+    alt="ELSINAL Logo"
+    width={60} 
+    height={60}
+    className="z-10 relative brightness-110 md:w-[65px] md:h-[65px] transition-transform duration-300 group-hover:scale-105"
+  />
+  
+  {/* The Glow: Now that the logo is transparent, this will shine through the gaps in the dots nicely */}
+  <div className="absolute inset-0 bg-[#A6CE39]/15 blur-2xl rounded-full scale-125 group-hover:bg-[#A6CE39]/25 transition-all"></div>
+</div>
             
             <div className="flex flex-col">
               <span 

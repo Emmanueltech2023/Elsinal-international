@@ -203,7 +203,7 @@ export default function AboutPage() {
 
         {/* 5. ORGANIZATIONAL & CONTACT */}
         <section className="px-5 md:px-12 py-20 max-w-screen-2xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="p-6 md:p-8 bg-white/[0.02] border border-white/5 rounded-2xl">
               <h5 className="text-[#A6CE39] font-black uppercase text-[14px] mb-6">Departments</h5>
               <ul className="space-y-3 text-[12px] font-bold text-white/70 uppercase">
@@ -227,7 +227,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="p-6 md:p-8 bg-[#A6CE39] rounded-2xl text-[#051007] md:col-span-2 lg:col-span-1">
+            {/* <div className="p-6 md:p-8 bg-[#A6CE39] rounded-2xl text-[#051007] md:col-span-2 lg:col-span-1">
               <h5 className="font-black uppercase text-[10px] mb-6">Contacts</h5>
               <div className="space-y-4">
                 <p className="text-sm font-black italic break-words">elsysteminternational2@gmail.com</p>
@@ -242,7 +242,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
